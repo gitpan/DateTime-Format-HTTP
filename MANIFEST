@@ -16,5 +16,3 @@ t/99pod.t
 t/basic.t
 t/date.t
 t/time2str.t
-
-SIGNATURE    Added here by Module::Build

@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use vars qw( $VERSION );
 
-$VERSION = '0.3501';
+$VERSION = '0.36';
 
 use DateTime;
 use HTTP::Date qw();
@@ -50,7 +50,7 @@ sub parse_datetime
 
     unless (defined $d{time_zone})
     {
-	$d{time_zone} = defined $zone ? $zone : 'local';
+	$d{time_zone} = defined $zone ? $zone : 'floating';
     }
 
     my $frac = $d{second}; $frac -= ($d{second} = int($frac));
@@ -132,7 +132,7 @@ The function also takes an optional second argument that specifies the
 default time zone to use when converting the date. This parameter is
 ignored if the zone is found in the date string itself. If this
 parameter is missing, and the date string format does not contain
-any zone specification, then the local time zone is assumed.
+any zone specification, then the floating time zone is used.
 
 The zone should be one that is recognized by L<DateTime::TimeZone>.
 
@@ -222,8 +222,9 @@ your problem is less likely to be neglected.
 
 =head1 LICENCE AND COPYRIGHT
 
-Copyright E<copy> Iain Truskett, 2003. All rights reserved.
-Sections of the documentation E<copy> Gisle Aas, 1995-1999.
+Copyright Iain Truskett, 2003. All rights reserved.
+Sections of the documentation Gisle Aas, 1995-1999.
+Changes since version 0.35 copyright David Rolsky, 2004.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.000 or,
