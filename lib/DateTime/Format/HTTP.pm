@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use vars qw( $VERSION );
 
-$VERSION = '0.35';
+$VERSION = '0.3501';
 
 use DateTime;
 use HTTP::Date qw();
@@ -105,7 +105,7 @@ __END__
 
 =head1 NAME
 
-DateTime::Format::HTTP - date conversion routines
+DateTime::Format::HTTP - Date conversion routines
 
 =head1 SYNOPSIS
 
@@ -124,7 +124,7 @@ HTTP protocol (and then some more).
 
 =head2 parse_datetime( $str [, $zone] )
 
-The str2time() function converts a string to machine time. It throws
+The parse_datetime() function converts a string to machine time. It throws
 an error if the format of $str is unrecognized, or the time is outside
 the representable range. The time formats recognized are listed below.
 
@@ -205,7 +205,7 @@ string representing Universal Time.
 
 Gisle Aas (GAAS) for writing L<HTTP::Date>.
 
-Me, for never quite finishing C<HTTP::Date::XS>.
+Iain, for never quite finishing C<HTTP::Date::XS>.
 
 =head1 SUPPORT
 
@@ -214,13 +214,13 @@ list. See http://lists.perl.org/ for more details.
 
 Alternatively, log them via the CPAN RT system via the web or email:
 
-    http://perl.dellah.org/rt/dthttp
+    http://rt.cpan.org/NoAuth/ReportBug.html?Queue=DateTime%3A%3AFormat%3A%3AHTTP
     bug-datetime-format-http@rt.cpan.org
 
 This makes it much easier for me to track things and thus means
 your problem is less likely to be neglected.
 
-=head1 LICENSE AND COPYRIGHT
+=head1 LICENCE AND COPYRIGHT
 
 Copyright E<copy> Iain Truskett, 2003. All rights reserved.
 Sections of the documentation E<copy> Gisle Aas, 1995-1999.
@@ -229,14 +229,17 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.000 or,
 at your option, any later version of Perl 5 you may have available.
 
-The full text of the licenses can be found in the F<Artistic> and
+The full text of the licences can be found in the F<Artistic> and
 F<COPYING> files included with this module, or in L<perlartistic> and
 L<perlgpl> as supplied with Perl 5.8.1 and later.
 
 
 =head1 AUTHOR
 
-Iain Truskett <spoon@cpan.org>
+Originally written by Iain Truskett <spoon@cpan.org>, who died on
+December 29, 2003.
+
+Maintained by Dave Rolsky <autarch@urth.org>.
 
 =head1 SEE ALSO
 
