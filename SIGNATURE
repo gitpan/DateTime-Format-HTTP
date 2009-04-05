@@ -1,0 +1,37 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.55.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 97d35e98ea3fc7c32815f86744babdf202dc5d04 Build.PL
+SHA1 2991a25faea71dc6c0019db99a0228b9a0b7626f CREDITS
+SHA1 8bb1ac94f3a8e2f9c67867ea57cbfee184d1b82e Changes
+SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
+SHA1 a96c9dbbc315968cd85f9c253fefa29b84cd53dd MANIFEST
+SHA1 567b0f7b4b05edc9874f9db075172d5b68922095 META.yml
+SHA1 1b64623adff45e0219b788eab22945710367709a Makefile.PL
+SHA1 4ecc94e428744d05c01f0107dbf66265ca0cb36e README
+SHA1 569e177f8deb639493f3fd5a0b90b6c738b35f48 lib/DateTime/Format/HTTP.pm
+SHA1 94f8fa8f925926f3c4f5043441a7f5136030feb4 t/basic.t
+SHA1 f0a1583e77d03fa698fcc656dbca9e436bc34a45 t/date.t
+SHA1 28a931f3b0c075d8d6c4ce47d5e89c3fdb19ed0f t/pod-coverage.t
+SHA1 cec881e89926d320475f9de2b7fad02c2169f510 t/pod.t
+SHA1 4d16f0f8cd203ecbbe1047b0578fd72c3e4e57a9 t/time2str.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEARECAAYFAknYv90ACgkQ3Or3ZzQuifNA6QCg9XhRHCttMhC2iuFBmv2ZFbB4
+CisAnA7++w7aQaJU9rQVhVeK8fgk3uCF
+=HfOb
+-----END PGP SIGNATURE-----

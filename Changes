@@ -1,3 +1,14 @@
+0.38  2009-04-05
+
+- No code changes from previous versions.
+
+- Shut up the verbose diagnostic output from the tests.
+
+- Fixed various bugs in the Build.PL, and generally modernized the
+  distro tarball. Hopefully this will fix problems some cpan testers
+  were seeing.
+
+
 0.37  2006-08-09
 
 - No code changes from previous versions, but there is no SIGNATURE

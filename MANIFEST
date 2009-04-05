@@ -1,18 +1,15 @@
-Artistic
-AUTHORS
 Build.PL
 Changes
-COPYING
 CREDITS
-INSTALL
 lib/DateTime/Format/HTTP.pm
-LICENCE
+LICENSE
 Makefile.PL
-MANIFEST
-MANIFEST.SKIP
+MANIFEST			This list of files
 META.yml
-README
-t/99pod.t
 t/basic.t
 t/date.t
+t/pod-coverage.t
+t/pod.t
 t/time2str.t
+README
+SIGNATURE    Added here by Module::Build

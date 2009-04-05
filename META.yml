@@ -1,15 +1,8 @@
 ---
 name: DateTime-Format-HTTP
-version: !!perl/hash:Module::Build::Version
-  original: 0.37
-  version:
-    - 0
-    - 370
+version: 0.38
 author:
-  - |-
-    Originally written by Iain Truskett <spoon@cpan.org>, who died on
-    December 29, 2003.
-  - Maintained by Dave Rolsky <autarch@urth.org>.
+  - 'Dave Rolsky <autarch@urth.org>'
 abstract: Date conversion routines
 license: perl
 resources:
@@ -21,8 +14,8 @@ requires:
 provides:
   DateTime::Format::HTTP:
     file: lib/DateTime/Format/HTTP.pm
-    version: 0.37
-generated_by: Module::Build version 0.2804
+    version: 0.38
+generated_by: Module::Build version 0.32
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
