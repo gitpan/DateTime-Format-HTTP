@@ -14,7 +14,6 @@ DESCRIPTION
 
 METHODS
   parse_datetime( $str [, $zone] )
-
     The parse_datetime() function converts a string to machine time. It
     throws an error if the format of $str is unrecognized, or the time is
     outside the representable range. The time formats recognized are listed
@@ -69,8 +68,7 @@ METHODS
     closest to the current date.
 
   format_datetime()
-
-    The `format_datetime()' method converts a DateTime to a string. If the
+    The "format_datetime()" method converts a DateTime to a string. If the
     function is called without an argument, it will use the current time.
 
     The string returned is in the format preferred for the HTTP protocol.
@@ -81,21 +79,19 @@ METHODS
        Sun, 06 Nov 1994 08:49:37 GMT
 
   format_iso( [$time] )
-
     Same as format_datetime(), but returns a "YYYY-MM-DD hh:mm:ss"-formatted
     string representing time in the local time zone. It is strongly
-    recommended that you use `format_isoz' or `format_datetime' instead (as
+    recommended that you use "format_isoz" or "format_datetime" instead (as
     these provide time zone indication).
 
   format_isoz( [$dt] )
-
     Same as format_iso(), but returns a "YYYY-MM-DD hh:mm:ssZ"-formatted
     string representing Universal Time.
 
 THANKS
     Gisle Aas (GAAS) for writing HTTP::Date.
 
-    Iain, for never quite finishing `HTTP::Date::XS'.
+    Iain, for never quite finishing "HTTP::Date::XS".
 
 SUPPORT
     Support for this module is provided via the datetime@perl.org email
@@ -126,10 +122,11 @@ AUTHOR
     Originally written by Iain Truskett <spoon@cpan.org>, who died on
     December 29, 2003.
 
-    Maintained by Dave Rolsky <autarch@urth.org>.
+    Maintained by Dave Rolsky <autarch@urth.org> and Christiaan Kras
+    <ckras@cpan.org>
 
 SEE ALSO
-    `datetime@perl.org' mailing list.
+    "datetime@perl.org" mailing list.
 
     http://datetime.perl.org/
 

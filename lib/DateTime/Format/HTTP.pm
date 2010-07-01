@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use vars qw( $VERSION );
 
-$VERSION = '0.38';
+$VERSION = '0.38_01';
 
 use DateTime;
 use HTTP::Date qw();
@@ -54,7 +54,7 @@ sub parse_datetime
     }
 
     my $frac = $d{second}; $frac -= ($d{second} = int($frac));
-    my $nano = 100_000_000 * $frac; $d{nanosecond} = $nano;
+    my $nano = 100_000_000 * $frac; $d{nanosecond} = int($nano);
     return DateTime->new( %d );
 }
 
@@ -240,7 +240,7 @@ L<perlgpl> as supplied with Perl 5.8.1 and later.
 Originally written by Iain Truskett <spoon@cpan.org>, who died on
 December 29, 2003.
 
-Maintained by Dave Rolsky <autarch@urth.org>.
+Maintained by Dave Rolsky <autarch@urth.org> and Christiaan Kras <ckras@cpan.org>
 
 =head1 SEE ALSO
 

@@ -1,21 +1,23 @@
 ---
-name: DateTime-Format-HTTP
-version: 0.38
+abstract: 'Date conversion routines'
 author:
-  - 'Dave Rolsky <autarch@urth.org>'
-abstract: Date conversion routines
+  - 'Christiaan Kras <ckras@cpan.org>'
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3607'
 license: perl
-resources:
-  license: http://dev.perl.org/licenses/
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: DateTime-Format-HTTP
+provides:
+  DateTime::Format::HTTP:
+    file: lib/DateTime/Format/HTTP.pm
+    version: 0.38_01
 requires:
   DateTime: 0.17
   HTTP::Date: 1.44
   Test::More: 0.47
-provides:
-  DateTime::Format::HTTP:
-    file: lib/DateTime/Format/HTTP.pm
-    version: 0.38
-generated_by: Module::Build version 0.32
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.38_01
