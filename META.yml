@@ -13,11 +13,11 @@ name: DateTime-Format-HTTP
 provides:
   DateTime::Format::HTTP:
     file: lib/DateTime/Format/HTTP.pm
-    version: 0.38_01
+    version: 0.39
 requires:
   DateTime: 0.17
   HTTP::Date: 1.44
   Test::More: 0.47
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.38_01
+version: 0.39
