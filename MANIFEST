@@ -3,12 +3,12 @@ Changes
 CREDITS
 lib/DateTime/Format/HTTP.pm
 LICENSE
-Makefile.PL
 MANIFEST			This list of files
-META.yml
-README
 t/basic.t
 t/date.t
 t/pod-coverage.t
 t/pod.t
 t/time2str.t
+Makefile.PL
+README
+META.yml
