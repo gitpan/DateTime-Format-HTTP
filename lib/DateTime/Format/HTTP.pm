@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use vars qw( $VERSION );
 
-$VERSION = '0.40';
+$VERSION = '0.42';
 
 use DateTime;
 use HTTP::Date qw();
@@ -54,7 +54,7 @@ sub parse_datetime
     }
 
     my $frac = $d{second}; $frac -= ($d{second} = int($frac));
-    my $nano = 100_000_000 * $frac; $d{nanosecond} = int($nano);
+    my $nano = 1_000_000_000 * $frac; $d{nanosecond} = int($nano + 0.5);
     return DateTime->new( %d );
 }
 
